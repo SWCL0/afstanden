@@ -44,7 +44,12 @@
         </form>
         <br>
         <div class="berekeningWeergeven">
-            <p>Omrekening: </p>
+            <?php
+            if (isset($_GET['result'])) {
+                $result = $_GET['result'];
+                echo "<p>Omrekening: $result</p>";
+            }
+            ?>
         </div>
     </div>
 </body>
