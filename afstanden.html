@@ -9,14 +9,14 @@
 <body>
     <h1>Afstanden omrekenen</h1>
     <div>
-        <form>
+        <form action="berekenenAfstanden.php" method="post">
             <div>
                 <label for="waarde">Welke waarde:</label>
-                <input type="number">                
+                <input type="number" name="waarde" id="waarde">                
             </div>
             <div>
-                <label for="currentGrootheid">Welke grootheid: </label>
-                <select name="currentGrootheden" id="currentGrootheid">
+                <label for="currentGrootheden">Welke grootheid: </label>
+                <select name="currentGrootheden" id="currentGrootheden">
                     <option value="Kilometer">Kilometer</option>
                     <option value="Hectometer">Hectometer</option>
                     <option value="Decameter">Decameter</option>
@@ -27,8 +27,8 @@
                 </select>                
             </div>
             <div>
-                <label for="gewensteGrootheid">Welke gewenste grootheid: </label>
-                <select name="gewensteGrootheden" id="gewensteGrootheid">
+                <label for="gewensteGrootheden">Welke gewenste grootheid: </label>
+                <select name="gewensteGrootheden" id="gewensteGrootheden">
                     <option value="Kilometer">Kilometer</option>
                     <option value="Hectometer">Hectometer</option>
                     <option value="Decameter">Decameter</option>
@@ -43,7 +43,9 @@
             </div>
         </form>
         <br>
-        <p>Omrekening: </p>
+        <div class="berekeningWeergeven">
+            <p>Omrekening: </p>
+        </div>
     </div>
 </body>
 </html>
