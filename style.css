@@ -1,0 +1,10 @@
+body {
+    background-color: gray;
+}
+
+form {
+    display: ;
+    flex-direction: column;
+    width: 100px;
+    margin-top: 5px;
+}
